@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Analyse de l'existant</title>
+    <!-- Custom fonts for this template-->
+    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet" >
+
+
+  </head>
+
+  <body id="page-top">
+
+  <!-- Page Wrapper -->
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul th:replace="~{fragments/header.html :: sidebar}">
+      </ul>
+      <div class="container-fluid">
+        <div class="row w-100">
+          <div class="col" style="text-align: center;">
+            <h1 style="margin-top: 10px;" class="text-dark">Analyse de l'existant</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary">Pourquoi Linkedin emploi est mal fait ?</h5>
+            <ul>
+              <li>Les Filtres et les recherches ne sont intuitifs mais ils sont complets</li>
+              <li>Rien n'explique l'administratif ou comment s'installer</li>
+              <li>Dis si le profil corresponds ou non à l'offre ( à la fois un plus et un moins )</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary ">BenchMark du site <a href="https://mon-vie-via.businessfrance.fr">Mon Volontariat International</a></h5>
+            <table class="table table-bordered dataTable" id="dataTable">
+              <thead>
+                <tr>
+                  <td>
+                    Avantages
+                  </td>
+                  <td>
+                    Inconvénients
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="odd">
+                  <td>Nombre d'offres visibles</td>
+                  <td>Création d'un compte pour visualiser les offres</td>
+                </tr>
+                <tr class="even">
+                  <td>Nombres de postes actuellement occupés visible</td>
+                  <td> </td>
+                </tr>
+                <tr class="odd">
+                  <td>Filtrage selon les paramêtres (secteurs, type, durée, continent, pays)</td>
+                  <td> </td>
+                </tr>
+              </tbody>
+            </table>
+            <p><bold>Idée :</bold></p>
+            <p> Si il y un filtrage par pays, il faudrait un lien vers <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/">
+              gouv.fr</a> et vers le site du gouvernement du pays</p>
+          </div>
+        </div>
+        <div class="row">
+          <div  class="col">
+            <h5 class="text-primary"> BenchMarck du site : <a href="https://www.myinternshipabroad.com">My Internship Abroad</a></h5>
+            <table class="table table-bordered dataTable">
+              <thead>
+                <tr>
+                  <td>Avantages</td>
+                  <td>Inconvénients</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Carte du monde qui montre combien d'offre par zone géographique / continent</td>
+                  <td>La carte du monde ne s'update pas en fonction des filtres</td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td>Fais payer les candidatures</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary"> Lien utilie et utilisé lors des BenchMark :</h5>
+            <ul>
+              <li><a href="https://www.cv-librarygroup.co.uk/">Library group</a></li>
+              <li><a href="https://www.britishjobs.co.uk/">British Jobs</a></li>
+              <li><a href="https://www.careerbuilder.com/">Career Builder</a></li>
+              <li><a href="https://www.projects-abroad.fr/"> Project Abroad</a></li>
+              <li><a href="https://alzea.org/">Alzea</a></li>
+              <li><a href="https://iaeste.org/">Iaeste</a></li>
+              <li><a href="https://eurodesk.eu/">Eurodesk</a></li>
+              <li><a href="https://www.internshipmapper.com/">Internship Mapper</a></li>
+              <li><a href="https://ec.europa.eu/">Ec Europa</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div th:replace="~{fragments/footer.html :: footer}"></div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
+    <script th:src="@{/home.js}"></script>
+  </body>
+</html>

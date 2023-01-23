@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Atelier d'Idéation</title>
+    <!-- Custom fonts for this template-->
+    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet" >
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+        <ul th:replace="~{fragments/header.html :: sidebar}">
+        </ul>
+      <div class="container-fluid">
+        <div class="row w-100">
+          <div class="col" style="text-align: center;">
+            <h1 style="margin-top: 10px;" class="text-dark">Atelier d'idéation</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Nous avons decoupés cet atelier en 3 parties pour classer nos idées:</p>
+            <ul>
+              <li><a href="#Utilisation">Utilisation</a></li>
+              <li><a href="#Logistique">Logistique</a></li>
+              <li><a href="#Divers">Divers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary" id="Utilisation">Utilisation</h5>
+            <p>Notre première idée est donc d'avoir un accès aux données de manière plus instinctive que sur les autres
+            concurent.</p>
+            <p>Notre seconde idée est d'ajouter un tri par destination et par environs pour filtrer les offres</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary" id="Logistique">Logistique</h5>
+            <p>Il faudrait rendre accessible sur notre site les informations sur les démarches propres à chaque pays</p>
+            <p>Ajouter la possibilité de convertir ses devises (ou un lien vers un site ou une banque de confiance)</p>
+            <p>Avoir une sorte de marketplace des logements disponible dans les environs de l'offre</p>
+            <p>Avoir un page qui montre le cours des monnais (ou un lien qui redirige vers cette courbe)</p>
+            <p>Informations sur les accord et les aides qu'accorde la France pour le pays de destination (s'il y en a)</p>
+            <p>Informations sur les actualité du pays (exemple: crise économique, crise sanitaire, etc ...)</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-primary" id="Divers">Divers</h5>
+            <p>Avoir un petit guide sur le pays de destination qui decrit la culture local</p>
+            <p>Avoir un petit test de compétence linguistique</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 class="text-primary">
+              Persona et Empathy Map
+            </h2>
+            <ul>
+              <li><a href="#Etienne">Etienne</a></li>
+              <li><a href="#Marc">Marc</a></li>
+              <li><a href="#Hala">Hala</a></li>
+              <li><a href="#Philippe">Philipe</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="Etienne">
+          <div class="col">
+            <h3 class="text-success">Etienne</h3>
+            <img th:src="@{img/Persona Etienne.png}">
+            <img th:src="@{img/EmpathieMapEtienne.png}">
+          </div>
+        </div>
+        <div class="row" id="Marc" style="padding-top: 2%;">
+          <div class="col">
+            <h3 class="text-success">Marc</h3>
+            <img th:src="@{img/PersonaMarc.png}">
+            <img th:src="@{img/EmpathieMapMarc.png}">
+          </div>
+        </div>
+        <div class="row" id="Hala" style="padding-top: 2%;">
+          <div class="col">
+            <h3 class="text-success">Hala</h3>
+            <img th:src="@{img/PersonaHala.png}">
+            <img th:src="@{img/EmpathieMapHala.png}">
+          </div>
+        </div>
+        <div class="row" id="Philippe" style="padding-top: 2%;">
+          <div class="col">
+            <h3 class="text-success">Philippe</h3>
+            <img th:src="@{img/PersonaPhilippe.png}">
+            <img th:src="@{img/EmpathieMapPhilippe.png}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div th:replace="~{fragments/footer.html :: footer}"></div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
+    <script th:src="@{/home.js}"></script>
+  </body>
+</html>
