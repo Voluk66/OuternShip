@@ -50,4 +50,10 @@ public class ApplicationController {
         return mv;
     }
 
+    @RequestMapping(value = "/soutenance", method = RequestMethod.GET)
+    public ModelAndView soutenance(){
+        ModelAndView mv = new ModelAndView("soutenance");
+        return mv;
+    }
+
 }
