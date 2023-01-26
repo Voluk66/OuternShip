@@ -27,33 +27,26 @@
   <!-- Sidebar -->
   <ul th:replace="~{fragments/header.html :: sidebar}">
   </ul>
+  <div class="container-fluid">
+    <div class="row w-100">
+      <div class="col" style="text-align: center;">
+        <h1 style="margin-top: 10px;" class="text-dark">Maquette UI</h1>
+      </div>
+    </div>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+               padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+               border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://xd.adobe.com/embed/1592a10b-eb03-4168-afdc-2ffe5f7492c6-40c1/?fullscreen" frameborder="0" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    </div>
+  </div>
 </div>
+<div th:replace="~{fragments/footer.html :: footer}"></div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
   <i class="fas fa-angle-up"></i>
 </a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-primary" href="login.html">Logout</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Bootstrap core JavaScript-->
 <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
