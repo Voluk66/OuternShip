@@ -20,9 +20,21 @@ public class ApplicationController {
         return mv;
     }
 
+    @RequestMapping(value = "/brief", method = RequestMethod.GET)
+    public ModelAndView brief(){
+        ModelAndView mv = new ModelAndView("brief");
+        return mv;
+    }
+
     @RequestMapping(value = "/analyse", method = RequestMethod.GET)
     public ModelAndView analyse(){
         ModelAndView mv = new ModelAndView("analyse");
+        return mv;
+    }
+
+    @RequestMapping(value = "/persona", method = RequestMethod.GET)
+    public ModelAndView persona(){
+        ModelAndView mv = new ModelAndView("persona");
         return mv;
     }
 
@@ -41,6 +53,12 @@ public class ApplicationController {
     @RequestMapping(value = "/testUtilisateur", method = RequestMethod.GET)
     public ModelAndView testUtilisateur(){
         ModelAndView mv = new ModelAndView("testUtilisateur");
+        return mv;
+    }
+
+    @RequestMapping(value = "/resultatTest", method = RequestMethod.GET)
+    public ModelAndView resultatTest(){
+        ModelAndView mv = new ModelAndView("resultatTest");
         return mv;
     }
 

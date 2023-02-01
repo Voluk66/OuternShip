@@ -44,23 +44,63 @@
         Plan du Projet
     </div>
 
+
+
+
+
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="planification">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Planification du Projet</span></a>
-        <a class="nav-link" href="analyse">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Analyse de l'existant</span></a>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Planification du Projet</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Planification du projet</h6>
+                <a class="collapse-item" href="brief">Prise de Brief</a>
+                <a class="collapse-item" href="planification">Méthodologie du projet</a>
+            </div>
+        </div>
+
+
+
+
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+           aria-expanded="true" aria-controls="collapseOne">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Analyse de l'existant</span>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Analyse de l'existant</h6>
+                <a class="collapse-item" href="analyse">Benchmark et Analyses</a>
+                <a class="collapse-item" href="persona">Personna</a>
+            </div>
+        </div>
+
+
         <a class="nav-link" href="ideation">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Atelier d'Idéation</span></a>
         <a class="nav-link" href="conception">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Conception UX</span></a>
-        <a class="nav-link" href="testUtilisateur">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Test Utilisateur</span></a>
+
+
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+           aria-expanded="true" aria-controls="collapseThree">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Tests Utilisateurs</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Tests Utilisateurs</h6>
+                <a class="collapse-item" href="testUtilisateur">Scénarios et Questions</a>
+                <a class="collapse-item" href="resultatTest">Résultat</a>
+            </div>
+        </div>
+
         <a class="nav-link" href="maquette">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Maquette UI</span></a>
@@ -76,7 +116,7 @@
     <li class="nav-item">
         <a class="nav-link" href="soutenance">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Souteance</span></a>
+            <span>Soutenance</span></a>
     </li>
 
     <!-- Nav Item - Pages Collapse Menu -->

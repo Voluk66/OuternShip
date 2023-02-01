@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Planification du Projet</title>
+  <!-- Custom fonts for this template-->
+  <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+  <link
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet" >
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <ul th:replace="~{fragments/header.html :: sidebar}">
+  </ul>
+  <div class="container-fluid">
+
+    <div class="row w-100">
+      <div class="col" style="text-align: center;">
+        <h1 style="margin-top: 10px;" class="text-dark">Planification du Projet</h1>
+        <h1 style="margin-top: 10px;" class="text-dark">Prise de Brief</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2 class="text-primary">Brief UX</h2>
+        <h5 class="text-success"> En quoi consiste le produit ? A quoi sert-il ? A quels besoins utilisateurs répond-il ?</h5>
+        <p> Aujourd’hui, il semble qu’il n’existe pas de plateforme française dédiée à la recherche de stage à l’étranger.
+          Notre produit serait donc une refonte de LinkedIn orientée sur la recherche de stage ou d’emploi à l’étranger.
+          Elle permettra à des entreprises basées à l’international de proposer des offres de stage et aux étudiants en
+          fin de parcours académique de trouver une opportunité d’expérience professionnelle internationale.</p>
+        <h5 class="text-success">Qui sont les utilisateurs cibles ? Qui est l’audience prioritaire selon vous ?</h5>
+        <p> Avec ce produit, nous visons un panel d’étudiants en fin de cycle, qu’ils aient un projet complet d’expatriation professionnel ou une simple envie d'expérience internationale.
+          Notre produit s'adresse principalement aux étudiants souhaitant se renseigner sur la mobilité dans le pays étranger de leur choix.
+          Pour assurer un trafic important et de ce fait large choix d’offres il sera aussi nécessaire de penser à l'expérience des représentants d’entreprise.</p>
+        <h5 class="text-success">Comment définiriez-vous le succès du projet ? Qu’est-ce qui aura été amélioré une fois que nous aurons accompli cette mission ?</h5>
+        <p> Nous estimons que le projet sera un succès s’il permet le départ en stage à l’étranger d’au moins 250 étudiants durant la première année d’exploitation.
+          Cela impliquerait un trafic intéressant entre les entreprises et les étudiants et une entente entre les deux parties.
+          Nous proposons alors une solution pour simplifier la recherche d’offres de stage à l’étranger et fluidifier la prise d’informations administratives et
+          logistiques concernant ces projets afin de traiter l'expérience globale de l’étudiant cible. </p>
+        <h5 class="text-success">Que voulez-vous savoir à travers les études utilisateurs ?</h5>
+        <p> À travers les études utilisateurs, nous voulons comprendre les questions récurrentes des étudiants ciblés ainsi que leurs chemins de réflexions
+          pour mieux traiter leurs besoins</p>
+        <h5 class="text-success">Quels sont les jalons clés du projet ?</h5>
+        <p>Nous avons identifié 6 :</p>
+        <ul>
+          <li><a href="planification">La Planification du Projet</a></li>
+          <li><a href="analyse"> L'analyse de l'existant </a></li>
+          <li><a href="ideation">L'atelier d'idéation</a></li>
+          <li><a href="conception"> Conception UX</a></li>
+          <li><a href="testUtilisateur"> Test Utilisateur</a></li>
+          <li><a href="maquette"> Maquette UI</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div th:replace="~{fragments/footer.html :: footer}"></div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+  <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script th:src="@{/js/sb-admin-2.min.js}"></script>
+  <script th:src="@{/home.js}"></script>
+</body>

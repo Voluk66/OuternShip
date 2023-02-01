@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Test Utilisateur</title>
+  <!-- Custom fonts for this template-->
+  <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet">
+  <link
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet" >
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <ul th:replace="~{fragments/header.html :: sidebar}">
+  </ul>
+  <div class="container-fluid">
+    <div class="row w-100">
+      <div class="col" style="text-align: center;">
+        <h1 style="margin-top: 10px;" class="text-dark">Tests Utilisateurs</h1>
+        <h1 style="margin-top: 10px;" class="text-dark">Résultats</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3> Résultat Employeur</h3>
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Sur une échelle de 1 à 5, comment évaluez-vous la facilité d'utilisation de la fonctionnalité de publication d'offres d'emploi sur OuternShip?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <canvas id="qe1"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Avez-vous rencontré des difficultés lors de la publication de votre offre d'emploi sur OuternShip? Si oui, lesquelles?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <div class=" row">
+                <div class="col-6">
+                  <h6>Problèmes Rapportés</h6>
+                  <ul>
+                    <li>Ne trouve pas le bouton d'ajout de vidéo</li>
+                    <li>Ajout d'image pour l'offre</li>
+                    <li>Ne trouve pas le bouton de publication de l'offre</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <canvas id="qe2"></canvas>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Avez-vous trouvé les options de personnalisation de l'offre d'emploi suffisantes (ajout de vidéo, images, etc)?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <canvas id="qe3"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Etes-vous satisfait(e) du nombre de candidatures reçues après avoir publié l'offre d'emploi sur OuternShip?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <canvas id="qe4"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Pensez-vous que OuternShip est un outil efficace pour publier des offres d'emploi et recruter des candidats?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <canvas id="qe5"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Est-ce que vous utiliserez à nouveau OuternShip pour publier des offres d'emploi?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <canvas id="qe6"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Avez-vous des suggestions d'amélioration pour la fonctionnalité de publication d'offres d'emploi sur OuternShip ?</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-pie pt-4">
+              <div class=" row">
+                <div class="col-6">
+                  <h6>Suggestion d'améliorations</h6>
+                  <ul>
+                    <li>Ajouter des instructions plus claires pour mettre une vidéo ou des images </li>
+                    <li>Personnalisation plus flexible pour permettre aux employeurs de personnaliser plus en profondeur leur offres</li>
+                    <li>Rendre le processus de publication plus clair</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <canvas id="qe7"></canvas>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col">
+            <h3> Résultat Candidat</h3>
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Sur une échelle de 1 à 5, comment évaluez-vous la facilité d'utilisation de la fonctionnalité de publication d'offres d'emploi sur OuternShip?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc1"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Avez-vous rencontré des difficultés lors de la publication de votre offre d'emploi sur OuternShip? Si oui, lesquelles?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc2"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Avez-vous trouvé les options de personnalisation de l'offre d'emploi suffisantes (ajout de vidéo, images, etc)?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc3"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Etes-vous satisfait(e) du nombre de candidatures reçues après avoir publié l'offre d'emploi sur OuternShip?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc4"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Pensez-vous que OuternShip est un outil efficace pour publier des offres d'emploi et recruter des candidats?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc5"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Est-ce que vous utiliserez à nouveau OuternShip pour publier des offres d'emploi?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <div class=" row">
+                    <div class="col-6">
+                      <h6>Suggestions d'améliorations</h6>
+                      <ul>
+                        <li>Filtre plus avancés</li>
+                        <li>Sauvegarder les offres d'emplois</li>
+                        <li>Ne plus voir les offres expirée</li>
+                        <li>Pouvoir suivre l'avancé de ma candidature</li>
+                        <li>Recevoir des notifications plus fréquente pour les offres d'emploi qui corresponde à mes compétences et intérêts </li>
+                        <li>Consulter les profils des employeurs pour en savoir plus sur l'entreprise sans ouvrir une nouvelle page internet</li>
+                        <li>Notifications d'offres d'emploie me correspondant</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <canvas id="qc6"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Avez-vous des suggestions d'amélioration pour la fonctionnalité de publication d'offres d'emploi sur OuternShip ?</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-pie pt-4">
+                  <canvas id="qc7"></canvas>
+                </div>
+              </div>
+            </div>
+  </div>
+</div>
+<div th:replace="~{fragments/footer.html :: footer}"></div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+<!-- Core plugin JavaScript-->
+<script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script th:src="@{/js/sb-admin-2.min.js}"></script>
+<script th:src="@{/js/resultatTest.js}"></script>
+</body>
+</html>

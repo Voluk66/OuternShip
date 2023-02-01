@@ -27,7 +27,61 @@
   <!-- Sidebar -->
   <ul th:replace="~{fragments/header.html :: sidebar}">
   </ul>
+  <div class="container-fluid">
+    <div class="row w-100">
+      <div class="col" style="text-align: center;">
+        <h1 style="margin-top: 10px;" class="text-dark">Tests Utilisateurs</h1>
+        <h1 style="margin-top: 10px;" class="text-dark">Scénarios et Questions</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 class="text-primary">Coté Employeur</h3>
+        <h5 class="text-success">Scénario</h5>
+        <ol>
+          <li>L’employeur se connecte à son compte LinkedIn </li>
+          <li>Il va dans la rubrique « emplois » en cliquant sur l’onglet </li>
+          <li>Il clique sur le bouton « Publier une offre d’emploi » </li>
+          <li>Il remplit les informations nécessaires </li>
+          <li>Il peut ajouter quelques éléments facultatifs </li>
+          <li>Il publie l’offre </li>
+          <li>Il vérifie que l’offre d’emploi est bien publiée </li>
+        </ol>
+        <h5 class="text-success">Questions</h5>
+        <p>Sur une échelle de 1 à 5, comment évaluez-vous la facilité d'utilisation de la fonctionnalité de publication d'offres d'emploi sur OuternShip? (1 étant très difficile, 5 étant très facile) </p>
+        <p>Avez-vous rencontré des difficultés lors de la publication de votre offre d'emploi sur OuternShip? Si oui, lesquelles? </p>
+        <p>Avez-vous trouvé les options de personnalisation de l'offre d'emploi suffisantes (ajout de vidéo, images, etc)? </p>
+        <p>Etes-vous satisfait(e) du nombre de candidatures reçues après avoir publié l'offre d'emploi sur OuternShip? </p>
+        <p>Pensez-vous que OuternShip est un outil efficace pour publier des offres d'emploi et recruter des candidats? </p>
+        <p>Est-ce que vous utiliserez à nouveau OuternShip pour publier des offres d'emploi? </p>
+        <p>Avez-vous des suggestions d'amélioration pour la fonctionnalité de publication d'offres d'emploi sur OuternShip ? </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 class="text-primary">Coté Candidat</h3>
+        <h5 class="text-success">Scénario</h5>
+        <ol>
+          <li>Le candidat d'emploi se connecte à OuternShip et accède à la section "Emplois" pour rechercher des offres d'emploi.  </li>
+          <li>Il filtre les recherches pour affiner ses résultats en fonction de ses compétences, de son emplacement et de son secteur d'intérêt. </li>
+          <li>Il parcourt les résultats de recherche et clique sur les offres d'emploi qui l'intéressent pour en savoir plus sur les exigences et les détails de l'emploi. </li>
+          <li>Il postule à l'emploi en cliquant sur le bouton "Postuler" et en téléchargeant son CV et sa lettre de motivation.  </li>
+          <li>Il reçoit une notification lorsque l'employeur a lu sa candidature et un message de confirmation lorsque sa candidature est acceptée.  </li>
+          <li>Il reçoit des mises à jour sur l'avancée de sa candidature et est invité à participer à un entretien en ligne.  </li>
+        </ol>
+        <h5 class="text-success">Questions</h5>
+        <p>Comment évaluez-vous la facilité d'utilisation de la fonctionnalité de recherche d'emplois sur OuternShip ? </p>
+        <p>Avez-vous trouvé les offres d'emploi correspondant à vos compétences et à vos intérêts ?  </p>
+        <p>Avez-vous rencontré des difficultés pour postuler aux offres d'emploi sur OuternShip ?  </p>
+        <p>Etes-vous satisfait des réponses et des mises à jour de l'employeur sur votre candidature ?  </p>
+        <p>Recommanderiez-vous OuternShip pour la recherche d'emploi à un ami ou à un collègue ?  </p>
+        <p>Avez-vous des suggestions pour améliorer la fonctionnalité de recherche d'emplois sur OuternShip ?  </p>
+        <p>Est-ce que vous avez trouvé un emploi grâce à OuternShip ?  </p>
+      </div>
+    </div>
+  </div>
 </div>
+<div th:replace="~{fragments/footer.html :: footer}"></div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
